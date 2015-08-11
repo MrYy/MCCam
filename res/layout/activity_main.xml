@@ -11,9 +11,8 @@
     <TextView
         android:id="@+id/showTextView"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" 
-        android:text="进度条"
-        />
+        android:layout_height="wrap_content"
+        android:text="拍摄进度" />
 
     <ProgressBar
         android:id="@+id/progressBar_record_progress"
@@ -22,8 +21,36 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/showTextView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="62dp" 
-        android:visibility="gone"
-        />
+        android:layout_marginTop="62dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/showTextView"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="47dp"
+        android:text="开始" />
+
+    <Button
+        android:id="@+id/button_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_start"
+        android:layout_alignBottom="@+id/button_start"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/button_start"
+        android:text="停止" />
+
+    <TextView
+        android:id="@+id/textview_angle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/showTextView"
+        android:layout_below="@+id/button_start"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="69dp"
+         />
 
 </RelativeLayout>
